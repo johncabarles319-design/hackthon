@@ -10,6 +10,10 @@ colors:
   deep-violet: "#32178e"
   signal-coral: "#ff715b"
   electric-lime: "#c8f23d"
+  soft-violet: "#e9e2ff"
+  mist-violet: "#c7c0d7"
+  climate-readable: "#4d6200"
+  fintech-readable: "#a72d20"
   error-red: "#b52f24"
   field-error: "#9f251c"
   hairline-ink: "rgba(23, 21, 34, 0.16)"
@@ -124,11 +128,14 @@ The palette uses quiet editorial neutrals as the field, a saturated violet as th
 - **Dense Ink:** Primary text, dark section fields, and the default primary action.
 - **Muted Plum:** Supporting copy and quiet metadata on light surfaces.
 - **Hairline Ink:** Structural dividers, field borders, and grid lines; it organizes without becoming decoration.
+- **Soft Violet / Mist Violet:** Editorial fields and supporting text used around studio artwork; neither replaces reactor violet as the primary signal.
 - **Error Red / Field Error:** Validation-only colors for invalid strokes and their explanatory copy.
 
 ### Named Rules
 
 **The Signal Has a Job Rule.** Coral and lime indicate focus, progress, availability, or a meaningful visual event; they are not general-purpose decoration.
+
+**The Signal Must Read Rule.** Bright track signals stay on abstract geometry. Selected text and large copy-bearing track surfaces use their darker readable variants so normal text maintains WCAG AA contrast.
 
 **The Warm Field Rule.** Default pages sit on warm ivory, while paper white is reserved for distinct sheets and controls.
 
@@ -177,6 +184,8 @@ Depth is a hybrid of paper layering and selective ambient lift. Most surfaces re
 ## Shapes
 
 The base form language is square and paper-like: buttons, cards, fields, and major panels use crisp zero-radius corners. Circles are reserved for instruments—status lights, avatars, stage indices, reactor cores, and mark containers. Abstract visuals introduce sharply asymmetric clipped polygons, creating the sense of translucent planes in motion.
+
+Photography and illustration may appear through one of two editorial apertures: a sharply clipped polygonal frame or a single oversized word. Image-filled type is reserved for the BUILD manifesto and functions as an artwork window, never as a generic gradient headline treatment.
 
 **The Instruments Are Round Rule.** Use circles for status, identity, sequence, and reactor mechanics; do not soften rectangular containers into generic rounded cards.
 
@@ -228,6 +237,12 @@ The base form language is square and paper-like: buttons, cards, fields, and maj
 
 - **Style:** Layer translucent clipped planes, orbital hairlines, a perspectival grid, circular core, and compact black labels inside an irregular paper-lit stage.
 - **Behavior:** Track changes recolor the primary plane and core ring while selected tracks alter one plane's angle or scale. Continuous orbit is slow and ambient; state changes settle with a fast-out, slow-in mechanical ease.
+
+### Editorial Artwork
+
+- **BUILD word:** One oversized, tightly set word acts as an image mask for the studio illustration. The accessible section heading carries the meaning; the artwork word is decorative and hidden from assistive technology.
+- **Studio constellation:** A central polygon-cropped illustration is surrounded by four offset principles. On narrow screens the principles become a single reading flow around the image.
+- **Use:** This pattern belongs to manifesto and benefit storytelling only; it is not a reusable card treatment.
 
 ## Do's and Don'ts
 
