@@ -94,9 +94,9 @@ export default function App() {
       <main>
         <section className="hero" id="top">
           <div className="hero-copy">
-            <p className="event-line"><span /> Manila · October 24–26</p>
             <h1>Build what’s <em>next.</em></h1>
             <p className="hero-intro">Three days to turn a sharp question into something people can use. Pick a challenge, meet your crew, and ship the first version.</p>
+            <p className="event-line"><span /> Manila · October 24–26</p>
             <div className="hero-actions"><button className="button button-primary" type="button" onClick={openRegistration}>Join the build <ArrowIcon /></button><a className="text-link" href="#tracks">Explore the tracks <ArrowIcon /></a></div>
             <div className="countdown" aria-label="Time until Hackthon begins" aria-live="polite">
               {countdown.complete ? <strong className="countdown-live">Hackthon is live</strong> : Object.entries(countdown).filter(([key]) => key !== 'complete').map(([unit, value]) => <div className="countdown-cell" key={unit}><strong>{String(value).padStart(2, '0')}</strong><span>{unit}</span></div>)}
@@ -113,7 +113,7 @@ export default function App() {
             <div className="track-list" role="list" aria-label="Challenge tracks">
               {tracks.map((track, index) => <button key={track.id} type="button" className="track-button" aria-pressed={trackIndex === index} onClick={() => setTrackIndex(index)}><span className="track-code">{track.code}</span><span>{track.name}</span><ArrowIcon /></button>)}
             </div>
-            <div className="track-brief" aria-live="polite"><div className="track-orbit"><MarkIcon /></div><p className="brief-index">Brief {String(trackIndex + 1).padStart(2, '0')}</p><h3>{selectedTrack.name}</h3><p>{selectedTrack.prompt}</p><ul>{selectedTrack.stats.map((stat) => <li key={stat}>{stat}</li>)}</ul></div>
+            <div className="track-brief" aria-live="polite"><div className="track-orbit"><MarkIcon /></div><h3>{selectedTrack.name}</h3><p>{selectedTrack.prompt}</p><ul>{selectedTrack.stats.map((stat) => <li key={stat}>{stat}</li>)}</ul></div>
           </div>
         </section>
 
@@ -134,7 +134,7 @@ export default function App() {
 
         <section className="teams-section section-shell" id="teams">
           <div className="team-intro"><h2>Find the missing perspective.</h2><p>Teams work better when skills overlap just enough and lived experience does not. Preview the kind of matches Hackthon will help make.</p><button className="button button-outline" type="button" onClick={() => setCandidateIndex((index) => (index + 1) % candidates.length)}>Preview another match <ArrowIcon /></button></div>
-          <div className="candidate-panel" aria-live="polite"><div className="candidate-status"><span /> Available now</div><div className="candidate-person"><div className="avatar">{candidate.initials}</div><div><h3>{candidate.name}</h3><p>{candidate.role}</p></div></div><p className="candidate-intent">{candidate.status}</p><div className="skill-list">{candidate.skills.map((skill) => <span key={skill}>{skill}</span>)}</div><div className="candidate-progress"><span style={{ width: `${((candidateIndex + 1) / candidates.length) * 100}%` }} /></div><small>{candidateIndex + 1} of {candidates.length} example profiles</small></div>
+          <div className="candidate-panel" aria-live="polite"><div className="candidate-status"><span /> Available now</div><div className="candidate-person"><div className="avatar">{candidate.initials}</div><div><h3>{candidate.name}</h3><p>{candidate.role}</p></div></div><p className="candidate-intent">{candidate.status}</p><div className="skill-list">{candidate.skills.map((skill) => <span key={skill}>{skill}</span>)}</div><div className="candidate-progress"><span style={{ '--progress': (candidateIndex + 1) / candidates.length }} /></div><small>{candidateIndex + 1} of {candidates.length} example profiles</small></div>
         </section>
 
         <section className="closing-section"><div className="closing-mark"><MarkIcon /></div><h2>A weekend is enough to make the first true thing.</h2><button className="button button-light" type="button" onClick={openRegistration}>Join the build <ArrowIcon /></button></section>
@@ -146,7 +146,7 @@ export default function App() {
         <button className="dialog-close" type="button" onClick={closeRegistration} aria-label="Close registration dialog">×</button>
         {submitted ? <div className="success-state" role="status"><div className="success-mark"><MarkIcon /></div><h2>You’re on the signal list.</h2><p>This prototype keeps your entry on this screen only. We’ll replace it with the real registration flow when the final features arrive.</p><button className="button button-primary" type="button" onClick={closeRegistration}>Return to the site</button></div> : (
           <form onSubmit={submitRegistration} noValidate>
-            <p className="dialog-mark">Hackthon / early access</p><h2>Save your place in the build.</h2><p>Leave a local demo entry. Nothing is transmitted or stored.</p>
+            <h2>Save your place in the build.</h2><p>Leave a local demo entry. Nothing is transmitted or stored.</p>
             <label htmlFor="registration-name">Your name</label><input id="registration-name" name="name" value={form.name} onChange={(event) => setForm({ ...form, name: event.target.value })} aria-invalid={Boolean(errors.name)} aria-describedby={errors.name ? 'name-error' : undefined} autoComplete="name" />{errors.name && <span className="field-error" id="name-error">{errors.name}</span>}
             <label htmlFor="registration-email">Email address</label><input id="registration-email" name="email" type="email" value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} aria-invalid={Boolean(errors.email)} aria-describedby={errors.email ? 'email-error' : undefined} autoComplete="email" />{errors.email && <span className="field-error" id="email-error">{errors.email}</span>}
             <button className="button button-primary dialog-submit" type="submit">Record my interest <ArrowIcon /></button>
