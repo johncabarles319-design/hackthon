@@ -3,10 +3,10 @@ import { getCountdown } from './lib/countdown.js'
 import { validateRegistration } from './lib/registration.js'
 
 const tracks = [
-  { id: 'ai', code: 'A', name: 'AI for everyone', prompt: 'Make an everyday service easier to understand, access, or trust with responsible AI.', signal: '#5a32e5', readableSignal: '#4b26ca', stats: ['12 teams', '2 mentors', 'Human-first'] },
-  { id: 'climate', code: 'C', name: 'Climate systems', prompt: 'Turn local environmental data into a practical tool for neighborhoods and small businesses.', signal: '#86a70b', readableSignal: '#4d6200', stats: ['09 teams', '3 datasets', 'Place-based'] },
-  { id: 'fintech', code: 'F', name: 'Inclusive fintech', prompt: 'Design a safer path to saving, payments, or credit for people traditional tools leave out.', signal: '#e14d38', readableSignal: '#a72d20', stats: ['08 teams', '2 partners', 'Trust-led'] },
-  { id: 'open', code: 'O', name: 'Open innovation', prompt: 'Bring a sharp problem from your community and build the smallest version that proves the idea.', signal: '#171522', readableSignal: '#171522', stats: ['Open brief', 'Any stack', 'Wild card'] },
+  { id: 'ai', code: 'A', name: 'AI for everyone', prompt: 'Make an everyday service easier to understand, access, or trust with responsible AI.', signal: '#59857b', stats: ['12 teams', '2 mentors', 'Human-first'] },
+  { id: 'climate', code: 'C', name: 'Climate systems', prompt: 'Turn local environmental data into a practical tool for neighborhoods and small businesses.', signal: '#d0b182', stats: ['09 teams', '3 datasets', 'Place-based'] },
+  { id: 'fintech', code: 'F', name: 'Inclusive fintech', prompt: 'Design a safer path to saving, payments, or credit for people traditional tools leave out.', signal: '#9c6c4a', stats: ['08 teams', '2 partners', 'Trust-led'] },
+  { id: 'open', code: 'O', name: 'Open innovation', prompt: 'Bring a sharp problem from your community and build the smallest version that proves the idea.', signal: '#a76c3c', stats: ['Open brief', 'Any stack', 'Wild card'] },
 ]
 
 const stages = [
@@ -17,9 +17,9 @@ const stages = [
 ]
 
 const builds = [
-  { track: 'Climate systems', name: 'Tide/Time', result: 'A barangay-scale flood window that turns sensor feeds into clear action cards.', team: 'Team Amihan · 4 makers', color: 'violet' },
-  { track: 'Inclusive fintech', name: 'Sari Ledger', result: 'A voice-first cashbook for micro-retailers who work faster than forms.', team: 'Team Tingi · 3 makers', color: 'coral' },
-  { track: 'AI for everyone', name: 'ClearCare', result: 'A clinic handoff tool that translates instructions without losing medical meaning.', team: 'Team Lunas · 5 makers', color: 'lime' },
+  { track: 'Climate systems', name: 'Tide/Time', result: 'A barangay-scale flood window that turns sensor feeds into clear action cards.', team: 'Team Amihan · 4 makers', color: 'beige' },
+  { track: 'Inclusive fintech', name: 'Sari Ledger', result: 'A voice-first cashbook for micro-retailers who work faster than forms.', team: 'Team Tingi · 3 makers', color: 'dirt' },
+  { track: 'AI for everyone', name: 'ClearCare', result: 'A clinic handoff tool that translates instructions without losing medical meaning.', team: 'Team Lunas · 5 makers', color: 'wintergreen' },
 ]
 
 const candidates = [
@@ -81,7 +81,7 @@ export default function App() {
   }
 
   return (
-    <div className="site-shell" style={{ '--signal': selectedTrack.signal, '--signal-readable': selectedTrack.readableSignal, '--lab-art': `url(${import.meta.env.BASE_URL}hackthon-lab.png)` }}>
+    <div className="site-shell" style={{ '--signal': selectedTrack.signal }}>
       <header className="masthead">
         <a className="brand" href="#top" aria-label="Hackthon home">H<span>●</span></a>
         <button className="menu-button" type="button" aria-expanded={menuOpen} aria-controls="site-navigation" onClick={() => setMenuOpen((open) => !open)}><span /><span /><span className="sr-only">Toggle navigation</span></button>

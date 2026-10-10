@@ -1,40 +1,38 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T00:00:00+08:00",
+  "generatedAt": "2026-10-10T00:00:00+08:00",
   "title": "Design System: Hackthon",
   "extensions": {
     "colorMeta": {
-      "warm-ivory": { "role": "neutral", "displayName": "Warm Ivory", "canonical": "#f3f0e8", "tonalRamp": ["#26241f", "#4a4740", "#716d64", "#99958b", "#bdb9b0", "#d9d6cf", "#ebe8e1", "#f8f6f0"] },
-      "paper-white": { "role": "neutral", "displayName": "Paper White", "canonical": "#fffdf6", "tonalRamp": ["#272621", "#4c4a43", "#747169", "#9d9a91", "#c2beb6", "#dfdcd4", "#f2efe8", "#fffdf6"] },
-      "dense-ink": { "role": "neutral", "displayName": "Dense Ink", "canonical": "#171522", "tonalRamp": ["#171522", "#312e3d", "#504c5c", "#726e7e", "#9691a1", "#bbb6c5", "#ded9e6", "#f5f1f8"] },
-      "muted-plum": { "role": "neutral", "displayName": "Muted Plum", "canonical": "#655f6d", "tonalRamp": ["#211e25", "#403b46", "#655f6d", "#89828f", "#aba4b0", "#cbc5cf", "#e5dfe8", "#f7f2f8"] },
-      "reactor-violet": { "role": "primary", "displayName": "Reactor Violet", "canonical": "#5a32e5", "tonalRamp": ["#1e075f", "#32108f", "#491dbe", "#5a32e5", "#7959eb", "#9c85f1", "#c4b7f7", "#eeeafd"] },
-      "deep-violet": { "role": "primary", "displayName": "Deep Violet", "canonical": "#32178e", "tonalRamp": ["#16064b", "#261074", "#32178e", "#5135ac", "#775fc5", "#9f8edb", "#c9bdec", "#f0ecfa"] },
-      "signal-coral": { "role": "secondary", "displayName": "Signal Coral", "canonical": "#ff715b", "tonalRamp": ["#59100c", "#8b241b", "#bd3a2d", "#e85644", "#ff715b", "#ff9787", "#ffc1b7", "#ffebe7"] },
-      "electric-lime": { "role": "secondary", "displayName": "Electric Lime", "canonical": "#c8f23d", "tonalRamp": ["#263700", "#455f03", "#68890a", "#8eb417", "#b2dc29", "#c8f23d", "#dcf882", "#f3fcd0"] },
-      "error-red": { "role": "error", "displayName": "Error Red", "canonical": "#b52f24", "tonalRamp": ["#400806", "#6a1510", "#94241c", "#b52f24", "#d25347", "#e57f75", "#f2b2ac", "#fbe7e5"] },
-      "field-error": { "role": "error", "displayName": "Field Error", "canonical": "#9f251c", "tonalRamp": ["#3a0705", "#61110d", "#861d16", "#9f251c", "#c34a3f", "#dd786f", "#edada7", "#fae5e2"] },
-      "hairline-ink": { "role": "neutral", "displayName": "Hairline Ink", "canonical": "rgba(23, 21, 34, 0.16)", "tonalRamp": ["rgba(23,21,34,0.72)", "rgba(23,21,34,0.58)", "rgba(23,21,34,0.44)", "rgba(23,21,34,0.32)", "rgba(23,21,34,0.22)", "rgba(23,21,34,0.16)", "rgba(23,21,34,0.10)", "rgba(23,21,34,0.05)"] }
+      "wintergreen": { "role": "primary", "displayName": "Wintergreen", "canonical": "#59857b", "tonalRamp": ["#132a25", "#25463f", "#386259", "#59857b", "#7ca49b", "#a2c0b9", "#cadbd7", "#edf4f2"] },
+      "wintergreen-dark": { "role": "primary", "displayName": "Accessible Wintergreen", "canonical": "#153f38", "tonalRamp": ["#0b211d", "#153f38", "#286057", "#47837a", "#70a69d", "#9cc8c1", "#c8e4df", "#edf6f4"] },
+      "champagne": { "role": "secondary", "displayName": "Champagne", "canonical": "#f8eaca", "tonalRamp": ["#352d1e", "#5b4d32", "#816e49", "#aa9162", "#d0b886", "#e4cfaa", "#f0dfbf", "#f8eaca"] },
+      "light-french-beige": { "role": "secondary", "displayName": "Light French Beige", "canonical": "#d0b182", "tonalRamp": ["#342817", "#57452a", "#7b633e", "#9f8257", "#bda06f", "#d0b182", "#e7d4b6", "#f7efe2"] },
+      "dirt": { "role": "secondary", "displayName": "Dirt", "canonical": "#9c6c4a", "tonalRamp": ["#2f1b10", "#51301f", "#74482f", "#9c6c4a", "#b98a67", "#d2aa8b", "#e7cdb8", "#f7eee7"] },
+      "dark-gold": { "role": "tertiary", "displayName": "Dark Gold", "canonical": "#a76c3c", "tonalRamp": ["#321a09", "#573015", "#7d4a23", "#a76c3c", "#c38c5c", "#daae82", "#ebcfb0", "#f8eee4"] },
+      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#fffaf0", "tonalRamp": ["#2c2a25", "#504d46", "#77736a", "#9f9a90", "#c4c0b7", "#e0dcd4", "#f2eee6", "#fffaf0"] },
+      "ink": { "role": "neutral", "displayName": "Deep Green Ink", "canonical": "#16342f", "tonalRamp": ["#0a1d19", "#16342f", "#2e554e", "#52786f", "#7a9d95", "#a4c0ba", "#cde0dc", "#eff6f4"] },
+      "muted": { "role": "neutral", "displayName": "Muted Umber", "canonical": "#6d665b", "tonalRamp": ["#26231f", "#454039", "#6d665b", "#8d867b", "#ada69b", "#ccc6bc", "#e4dfd7", "#f7f4ef"] },
+      "line": { "role": "neutral", "displayName": "Green Hairline", "canonical": "rgba(22, 52, 47, 0.18)", "tonalRamp": ["rgba(22,52,47,.72)", "rgba(22,52,47,.58)", "rgba(22,52,47,.44)", "rgba(22,52,47,.32)", "rgba(22,52,47,.24)", "rgba(22,52,47,.18)", "rgba(22,52,47,.10)", "rgba(22,52,47,.05)"] },
+      "error": { "role": "error", "displayName": "Field Error", "canonical": "#8d2d24", "tonalRamp": ["#310a07", "#53130f", "#742019", "#8d2d24", "#b05249", "#cc7f77", "#e3b1ac", "#f7e7e5"] }
     },
     "typographyMeta": {
-      "display": { "displayName": "Reactor Display", "purpose": "One short, dominant first-view statement." },
-      "headline": { "displayName": "Section Headline", "purpose": "Section-level propositions constrained to compact line lengths." },
-      "title": { "displayName": "Local Title", "purpose": "Project, state, and dialog focal points." },
-      "body": { "displayName": "Explanatory Body", "purpose": "Readable event guidance and supporting narrative." },
-      "label": { "displayName": "Instrument Label", "purpose": "Dates, categories, status, indices, and metadata." }
+      "display": { "displayName": "Editorial Display", "purpose": "The first-view proposition and rare oversized statements." },
+      "headline": { "displayName": "Section Headline", "purpose": "Compact editorial propositions that lead each section." },
+      "title": { "displayName": "Panel Title", "purpose": "Project, stage, candidate, and dialog focal points." },
+      "body": { "displayName": "Explanatory Body", "purpose": "Readable guidance, descriptions, and supporting narrative." },
+      "label": { "displayName": "Instrument Label", "purpose": "Dates, status, categories, sequence, and metadata." }
     },
     "shadows": [
-      { "name": "ambient-panel", "value": "0 22px 60px rgba(40, 25, 82, 0.14)", "purpose": "Selected panels, reactor planes, and floating mobile navigation." },
-      { "name": "compact-action", "value": "0 10px 28px rgba(23, 21, 34, 0.18)", "purpose": "Dark primary actions on light fields." },
-      { "name": "dialog-lift", "value": "0 32px 100px rgba(23, 21, 34, 0.35)", "purpose": "Registration dialog separation from the blurred backdrop." },
-      { "name": "live-halo", "value": "0 0 0 6px rgba(200, 242, 61, 0.20)", "purpose": "Availability and live-status dots." }
+      { "name": "ambient-frame", "value": "0 26px 72px rgba(11, 42, 36, .28)", "purpose": "The single broad lift around the framed paper product canvas and dialog." },
+      { "name": "instrument-plane", "value": "0 18px 40px rgba(22, 52, 47, .14)", "purpose": "Subtle separation for overlapping reactor planes." },
+      { "name": "instrument-core", "value": "0 18px 45px rgba(22, 52, 47, .25)", "purpose": "Focused lift for the reactor's circular paper core." }
     ],
     "motion": [
-      { "name": "state-settle", "value": "580ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Reactor geometry and stateful plane transformations." },
-      { "name": "signal-shift", "value": "480ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Track-driven signal color changes." },
-      { "name": "control-lift", "value": "180ms ease", "purpose": "Short tactile button lift." },
-      { "name": "directional-arrow", "value": "200ms ease", "purpose": "Directional icon travel on hover." },
-      { "name": "ambient-orbit", "value": "8s–11s linear infinite", "purpose": "Slow reactor orbit only; removed for reduced motion." }
+      { "name": "control-lift", "value": "180ms ease", "purpose": "Short button lift and directional icon travel." },
+      { "name": "navigation-underline", "value": "220ms ease", "purpose": "Compact gold underline reveal in the masthead." },
+      { "name": "state-settle", "value": "500ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Track-driven reactor plane reorientation." },
+      { "name": "ambient-orbit", "value": "12s–16s linear infinite", "purpose": "Low-contrast instrument orbits; disabled for reduced motion." }
     ],
     "breakpoints": [
       { "name": "compact", "value": "520px" },
@@ -46,88 +44,90 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The default directional action on light fields.",
+      "description": "A compact champagne action for dark wintergreen fields.",
       "html": "<button class=\"ds-btn-primary\">JOIN THE BUILD <span aria-hidden=\"true\">→</span></button>",
-      "css": ".ds-btn-primary { min-height: 52px; padding: .95rem 1.35rem; display: inline-flex; align-items: center; justify-content: center; gap: 1rem; border: 1px solid transparent; border-radius: 0; color: #fff; background: var(--ink, #171522); box-shadow: 0 10px 28px rgba(23,21,34,.18); font: 600 1rem/1 'DM Sans', sans-serif; cursor: pointer; transition: transform 180ms ease, box-shadow 180ms ease; } .ds-btn-primary span { transition: transform 200ms ease; } .ds-btn-primary:hover { transform: translateY(-2px); } .ds-btn-primary:hover span { transform: translateX(4px); } .ds-btn-primary:focus-visible { outline: 3px solid var(--coral, #ff715b); outline-offset: 4px; } .ds-btn-primary:active { transform: translateY(0); }"
+      "css": ".ds-btn-primary { min-height:44px; padding:.75rem 1rem; display:inline-flex; align-items:center; justify-content:center; gap:.8rem; border:1px solid transparent; border-radius:4px; color:var(--ink,#16342f); background:var(--champagne,#f8eaca); font:700 .78rem/1 'Manrope',sans-serif; cursor:pointer; transition:transform 180ms ease; } .ds-btn-primary span { transition:transform 180ms ease; } .ds-btn-primary:hover { transform:translateY(-2px); } .ds-btn-primary:hover span { transform:translateX(3px); } .ds-btn-primary:focus-visible { outline:3px solid var(--gold,#a76c3c); outline-offset:3px; } .ds-btn-primary:active { transform:translateY(0); }"
     },
     {
       "name": "Outline Button",
       "kind": "button",
       "refersTo": "button-outline",
-      "description": "A secondary exploratory action that keeps the warm field visible.",
+      "description": "A quiet exploratory action on warm paper surfaces.",
       "html": "<button class=\"ds-btn-outline\">PREVIEW ANOTHER MATCH <span aria-hidden=\"true\">→</span></button>",
-      "css": ".ds-btn-outline { min-height: 52px; padding: .95rem 1.35rem; display: inline-flex; align-items: center; justify-content: center; gap: 1rem; border: 1px solid var(--ink, #171522); border-radius: 0; color: var(--ink, #171522); background: transparent; font: 600 1rem/1 'DM Sans', sans-serif; cursor: pointer; transition: transform 180ms ease; } .ds-btn-outline span { transition: transform 200ms ease; } .ds-btn-outline:hover { transform: translateY(-2px); } .ds-btn-outline:hover span { transform: translateX(4px); } .ds-btn-outline:focus-visible { outline: 3px solid var(--coral, #ff715b); outline-offset: 4px; } .ds-btn-outline:active { transform: translateY(0); }"
+      "css": ".ds-btn-outline { min-height:44px; padding:.75rem 1rem; display:inline-flex; align-items:center; justify-content:center; gap:.8rem; border:1px solid var(--ink,#16342f); border-radius:4px; color:var(--ink,#16342f); background:transparent; font:700 .78rem/1 'Manrope',sans-serif; cursor:pointer; transition:transform 180ms ease; } .ds-btn-outline span { transition:transform 180ms ease; } .ds-btn-outline:hover { transform:translateY(-2px); } .ds-btn-outline:hover span { transform:translateX(3px); } .ds-btn-outline:focus-visible { outline:3px solid var(--gold,#a76c3c); outline-offset:3px; }"
     },
     {
       "name": "Text Field",
       "kind": "input",
       "refersTo": "input",
-      "description": "A square, paper-clear registration field with external focus and explicit error state.",
+      "description": "A compact warm-paper registration field with gold focus and explicit error state.",
       "html": "<label class=\"ds-field-label\" for=\"ds-email\">Email address</label><input class=\"ds-field\" id=\"ds-email\" type=\"email\" placeholder=\"maker@example.com\">",
-      "css": ".ds-field-label { display: block; margin: 0 0 .5rem; color: var(--ink, #171522); font: 600 .82rem/1.3 'DM Sans', sans-serif; } .ds-field { width: 100%; min-height: 52px; padding: 0 .9rem; border: 1px solid rgba(23,21,34,.16); border-radius: 0; color: var(--ink, #171522); background: #fff; caret-color: var(--violet, #5a32e5); font: 400 1rem/1.4 'DM Sans', sans-serif; } .ds-field:hover { border-color: rgba(23,21,34,.35); } .ds-field:focus-visible { outline: 3px solid var(--coral, #ff715b); outline-offset: 4px; } .ds-field[aria-invalid='true'] { border-color: #b52f24; }"
+      "css": ".ds-field-label { display:block; margin:0 0 .45rem; color:var(--ink,#16342f); font:700 .76rem/1.3 'Manrope',sans-serif; } .ds-field { width:100%; min-height:50px; padding:0 .85rem; border:1px solid rgba(22,52,47,.18); border-radius:4px; color:var(--ink,#16342f); background:var(--paper,#fffaf0); caret-color:var(--gold,#a76c3c); font:400 1rem/1.4 'Manrope',sans-serif; } .ds-field:hover { border-color:rgba(22,52,47,.4); } .ds-field:focus-visible { outline:3px solid var(--gold,#a76c3c); outline-offset:3px; } .ds-field[aria-invalid='true'] { border-color:#8d2d24; }"
     },
     {
       "name": "Masthead Navigation",
       "kind": "nav",
-      "description": "Compact semibold anchors with a directional violet underline.",
+      "description": "Compact bold links with a restrained dark-gold underline.",
       "html": "<nav class=\"ds-nav\" aria-label=\"Example navigation\"><a href=\"#\">Tracks</a><a href=\"#\">Journey</a><a href=\"#\">Builds</a><a href=\"#\">Teams</a></nav>",
-      "css": ".ds-nav { display: flex; gap: 2rem; color: var(--ink, #171522); font: 600 .9rem/1.2 'DM Sans', sans-serif; } .ds-nav a { position: relative; color: inherit; text-decoration: none; } .ds-nav a::after { content: ''; position: absolute; right: 0; bottom: -8px; left: 0; height: 2px; background: var(--violet, #5a32e5); transform: scaleX(0); transform-origin: right; transition: transform 220ms ease; } .ds-nav a:hover::after, .ds-nav a:focus-visible::after { transform: scaleX(1); transform-origin: left; } .ds-nav a:focus-visible { outline: 3px solid var(--coral, #ff715b); outline-offset: 6px; }"
+      "css": ".ds-nav { display:flex; gap:2rem; color:var(--ink,#16342f); font:700 .78rem/1.2 'Manrope',sans-serif; } .ds-nav a { position:relative; color:inherit; text-decoration:none; } .ds-nav a::after { content:''; position:absolute; right:0; bottom:-8px; left:0; height:1px; background:var(--gold,#a76c3c); transform:scaleX(0); transition:transform 220ms ease; } .ds-nav a:hover::after,.ds-nav a:focus-visible::after { transform:scaleX(1); } .ds-nav a:focus-visible { outline:3px solid var(--gold,#a76c3c); outline-offset:5px; }"
     },
     {
       "name": "Skill Chip",
       "kind": "chip",
-      "refersTo": "status-chip",
+      "refersTo": "skill-chip",
       "description": "A non-interactive capability label for dark participant panels.",
       "html": "<span class=\"ds-skill-chip\">PROTOTYPING</span>",
-      "css": ".ds-skill-chip { display: inline-flex; padding: .6rem .75rem; border: 1px solid rgba(255,255,255,.25); border-radius: 0; color: #fffdf6; background: transparent; font: 600 .78rem/1 'DM Sans', sans-serif; letter-spacing: .04em; }"
+      "css": ".ds-skill-chip { display:inline-flex; padding:.5rem .65rem; border:1px solid rgba(248,234,202,.28); border-radius:3px; color:var(--champagne,#f8eaca); background:transparent; font:600 .7rem/1 'Manrope',sans-serif; }"
     },
     {
       "name": "Project Card",
       "kind": "card",
-      "description": "A flat paper sheet pairing abstract proof imagery with an editorial project story.",
+      "description": "A warm editorial card pairing geometric proof imagery with a Bodoni project story.",
       "html": "<article class=\"ds-project-card\"><div class=\"ds-project-visual\"><i></i><b></b></div><div class=\"ds-project-copy\"><p>CLIMATE SYSTEMS</p><h3>Tide/Time</h3><span>A neighborhood-scale signal turned into one clear action.</span></div></article>",
-      "css": ".ds-project-card { overflow: hidden; border: 1px solid rgba(23,21,34,.16); border-radius: 0; color: var(--ink, #171522); background: var(--paper, #fffdf6); font-family: 'DM Sans', sans-serif; } .ds-project-visual { position: relative; min-height: 170px; overflow: hidden; background: #e8e3f2; } .ds-project-visual i { position: absolute; top: 18%; left: 18%; width: 44%; height: 58%; background: var(--violet, #5a32e5); clip-path: polygon(0 0,100% 20%,68% 100%,12% 77%); transform: rotate(24deg); } .ds-project-visual b { position: absolute; top: 15%; right: 16%; width: 22%; aspect-ratio: 1; border-radius: 50%; background: var(--coral, #ff715b); box-shadow: 0 0 0 18px rgba(255,255,255,.45); } .ds-project-copy { padding: 1.7rem; } .ds-project-copy p { margin: 0 0 1rem; color: var(--violet, #5a32e5); font-size: .75rem; font-weight: 600; letter-spacing: .08em; } .ds-project-copy h3 { margin: 0 0 1rem; font: 600 2.3rem/.95 'Syne', sans-serif; letter-spacing: -.05em; } .ds-project-copy span { color: #655f6d; line-height: 1.55; }"
+      "css": ".ds-project-card { overflow:hidden; border-radius:7px; color:var(--ink,#16342f); background:var(--champagne,#f8eaca); font-family:'Manrope',sans-serif; } .ds-project-visual { position:relative; min-height:170px; overflow:hidden; background:var(--wintergreen,#59857b); } .ds-project-visual i { position:absolute; top:18%; left:18%; width:44%; height:58%; border-radius:5px; background:var(--wintergreen-dark,#153f38); transform:rotate(14deg); } .ds-project-visual b { position:absolute; top:13%; right:16%; width:22%; aspect-ratio:1; border-radius:50%; background:var(--gold,#a76c3c); } .ds-project-copy { padding:1.7rem; } .ds-project-copy p { margin:0 0 .8rem; color:var(--gold,#a76c3c); font-size:.64rem; font-weight:700; letter-spacing:.08em; } .ds-project-copy h3 { margin:0 0 .8rem; font:600 2.3rem/.95 'Bodoni Moda',serif; letter-spacing:-.03em; } .ds-project-copy span { color:#6d665b; line-height:1.55; }"
     },
     {
       "name": "Track Selector",
       "kind": "custom",
-      "description": "A ruled selector whose active row becomes the current signal source.",
+      "description": "A ruled row with a circular code and dark-green selected state.",
       "html": "<button class=\"ds-track\" aria-pressed=\"true\"><span>A</span><strong>AI for everyone</strong><b aria-hidden=\"true\">→</b></button>",
-      "css": ".ds-track { width: 100%; min-height: 86px; padding: 1rem 0; display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 1rem; border: 0; border-top: 1px solid rgba(23,21,34,.16); border-bottom: 1px solid rgba(23,21,34,.16); color: var(--ink, #171522); background: transparent; text-align: left; font: 400 1.25rem/1.2 'DM Sans', sans-serif; cursor: pointer; } .ds-track span { width: 2rem; height: 2rem; display: grid; place-items: center; border: 1px solid currentColor; border-radius: 50%; font-size: .72rem; font-weight: 600; } .ds-track strong { font-weight: 600; } .ds-track b { font-weight: 400; transition: transform 240ms ease; } .ds-track:hover b, .ds-track[aria-pressed='true'] b { transform: translateX(5px); } .ds-track[aria-pressed='true'] { color: var(--violet, #5a32e5); } .ds-track:focus-visible { outline: 3px solid var(--coral, #ff715b); outline-offset: 4px; }"
+      "css": ".ds-track { width:100%; min-height:78px; padding:.8rem 0; display:grid; grid-template-columns:38px 1fr auto; align-items:center; gap:1rem; border:0; border-bottom:1px solid rgba(22,52,47,.18); color:var(--ink,#16342f); background:transparent; text-align:left; font:400 1rem/1.2 'Manrope',sans-serif; cursor:pointer; } .ds-track span { width:1.8rem; height:1.8rem; display:grid; place-items:center; border:1px solid currentColor; border-radius:50%; font-size:.64rem; font-weight:700; } .ds-track strong { font-weight:700; } .ds-track b { transition:transform 180ms ease; } .ds-track:hover b,.ds-track[aria-pressed='true'] b { transform:translateX(3px); } .ds-track[aria-pressed='true'] { color:var(--wintergreen-dark,#153f38); } .ds-track:focus-visible { outline:3px solid var(--gold,#a76c3c); outline-offset:3px; }"
     }
   ],
   "narrative": {
-    "northStar": "The Idea Reactor",
-    "overview": "Hackthon feels like an optimistic future lab assembled from paper, ink, and live electrical signals. The visual system makes the event's process visible: challenges enter, planes shift, teams form, and prototypes emerge. Its energy comes from the tension between an editorial foundation and vivid technical instrumentation, never from a conventional startup hero or a generic feature-card grid.\n\nThe system is spacious without becoming passive. Oversized, tightly set headlines create momentum; hairlines, labels, index marks, and structured rails keep that energy precise. Interaction changes the composition itself—signal colors switch, geometry recalibrates, progress advances—so state always feels causal and legible.",
+    "northStar": "The Wintergreen Workshop",
+    "overview": "Hackthon is a warm editorial workshop framed as a working instrument. A paper-white product canvas floats on a deep wintergreen field, containing modular panels in champagne, beige, wintergreen, dirt, and dark gold. The visual language feels crafted and serious without becoming nostalgic: high-contrast Bodoni headlines carry the editorial voice, while compact Manrope navigation, labels, and body copy keep the interface practical.\n\nThe system makes progress visible through asymmetric panels, fine rules, circular gauges, and a restrained orbital motif. Motion is ambient rather than spectacular. It suggests ideas circulating through a build process, then yields completely to reduced-motion preferences.",
     "keyCharacteristics": [
-      "Warm ivory and paper surfaces grounded by dense near-black ink.",
-      "Ultraviolet structural planes with coral and electric-lime signals.",
-      "Oversized Syne headlines paired with calm, readable DM Sans copy.",
-      "Square paper-like panels, circular instruments, and asymmetric clipped geometry.",
-      "Motion that settles like calibrated machinery and fully yields to reduced-motion preferences."
+      "A framed paper product canvas on a wintergreen browser field.",
+      "Bodoni Moda display typography paired with compact, readable Manrope.",
+      "Ten-pixel bento gutters and modular asymmetric panel compositions.",
+      "Champagne, beige, dirt, and gold warmth grounded by accessible dark greens.",
+      "Restrained 4–12px corners, circular instruments, and minimal orbit motion."
     ],
     "rules": [
-      { "name": "The Signal Has a Job Rule", "body": "Coral and lime indicate focus, progress, availability, or a meaningful visual event; they are not general-purpose decoration.", "section": "colors" },
-      { "name": "The Warm Field Rule", "body": "Default pages sit on warm ivory, while paper white is reserved for distinct sheets and controls.", "section": "colors" },
-      { "name": "The Compression Creates Energy Rule", "body": "Display type earns its scale through short copy, tight tracking, and constrained line length; do not apply the same compression to body text.", "section": "typography" },
-      { "name": "The Unequal Pair Rule", "body": "When two regions share a row, give one clear visual authority; avoid defaulting to symmetrical halves unless the content genuinely demands parity.", "section": "layout" },
-      { "name": "The Flat Until Active Rule", "body": "Ordinary content surfaces stay flat; ambient lift appears on interactive, selected, or modal layers.", "section": "elevation" },
-      { "name": "The Instruments Are Round Rule", "body": "Use circles for status, identity, sequence, and reactor mechanics; do not soften rectangular containers into generic rounded cards.", "section": "shapes" },
-      { "name": "The Cut Is Intentional Rule", "body": "Polygonal clipping belongs to expressive reactor and project imagery, not functional text containers.", "section": "shapes" }
+      { "name": "The Warm Materials Rule", "body": "Use champagne, beige, dirt, and gold as physical materials within the composition; do not scatter them as unrelated accent colors.", "section": "colors" },
+      { "name": "The Dark Green Contrast Rule", "body": "Text-bearing green panels use accessible dark greens; mid-tone wintergreen is reserved for larger fields and graphic forms.", "section": "colors" },
+      { "name": "The Editorial/Instrument Split Rule", "body": "Bodoni carries ideas and names; Manrope carries navigation, explanation, state, and control labels.", "section": "typography" },
+      { "name": "The Ten-Pixel Joint Rule", "body": "Related panels meet across a consistent 10px gutter; do not substitute wide generic card spacing.", "section": "layout" },
+      { "name": "The Unequal Pair Rule", "body": "Multi-column compositions must establish a dominant panel rather than defaulting to equal halves.", "section": "layout" },
+      { "name": "The One Floating Object Rule", "body": "The product frame is the principal elevated object; internal panels rely on color, rules, and gutters before shadow.", "section": "elevation" },
+      { "name": "The Instruments Are Round Rule", "body": "Circles communicate status, identity, sequence, and system motion; they are not a general container style.", "section": "shapes" },
+      { "name": "The Radius Has Rank Rule", "body": "Radius grows with structural scale, from 4px controls to the 12px product frame; never use oversized capsule corners.", "section": "shapes" }
     ],
     "dos": [
-      "Do use warm ivory as the default canvas and reserve paper white for distinct sheets.",
-      "Do pair one dominant proposition with one supporting explanation in each section.",
-      "Do use hairlines, labels, indices, and rails to make process and state visible.",
-      "Do connect interactive state to more than color when possible through arrows, geometry, halos, or progress.",
-      "Do preserve visible keyboard focus and disable nonessential motion for reduced-motion preferences."
+      "Do keep the paper product visibly framed by the wintergreen viewport field.",
+      "Do use 10px gutters to join related panels into modular compositions.",
+      "Do pair one editorial Bodoni proposition with clear Manrope explanation.",
+      "Do reserve circles for instruments, identity, status, and sequence.",
+      "Do use accessible dark greens for all text-bearing green panels.",
+      "Do disable orbit and transition motion for reduced-motion preferences."
     ],
     "donts": [
-      "Don't turn the system into a conventional startup hero followed by a uniform feature-card grid.",
-      "Don't round buttons, fields, cards, or primary panels into soft generic capsules.",
-      "Don't use coral or lime without a signal, status, focus, or progress role.",
-      "Don't compress body typography to imitate the display face.",
-      "Don't add decorative shadows to every surface; flatness is the default."
+      "Don't reintroduce violet, coral, lime, Syne, or the discarded future-lab palette.",
+      "Don't turn the page into a uniform grid of interchangeable cards.",
+      "Don't use pill-shaped containers or radii above the restrained 4–12px scale.",
+      "Don't add shadows to every panel; the framed canvas owns the main elevation.",
+      "Don't make orbit motion fast, prominent, or necessary for understanding state."
     ]
   }
 }
