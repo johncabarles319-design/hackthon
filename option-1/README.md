@@ -26,11 +26,11 @@ npm ci
 npm run dev
 ```
 
-To run Option 2 instead:
+From this directory, run Option 2 instead:
 
 ```bash
-cd option-2
-npm install
+cd ../option-2
+npm ci
 npm run dev
 ```
 
@@ -44,8 +44,8 @@ npm run build
 Option 2 has its own checks:
 
 ```bash
-npm test --prefix option-2
-npm run build --prefix option-2
+npm test --prefix ../option-2
+npm run build --prefix ../option-2
 ```
 
 ## Deployment

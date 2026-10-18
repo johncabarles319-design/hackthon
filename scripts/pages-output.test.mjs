@@ -47,20 +47,23 @@ test('Pages output serves the chooser and both option sites', async (context) =>
   const chooserHtml = await chooser.text()
 
   assert.equal(chooser.status, 200)
-  assert.match(chooserHtml, /href=["']\.\/option-1\//)
-  assert.match(chooserHtml, /href=["']\.\/option-2\//)
+  const routes = [...chooserHtml.matchAll(/href=["']\.\/(option-[12]\/)["']/g)].map((match) => match[1])
+  assert.deepEqual(routes, ['option-1/', 'option-2/'])
   assert.equal((await fetch(`${origin}/hackthon/chooser.css`)).status, 200)
 
-  for (const route of ['/hackthon/option-1/', '/hackthon/option-2/']) {
+  for (const option of ['option-1', 'option-2']) {
+    const route = new URL(`${option}/`, `${origin}/hackthon/`).pathname
     const page = await fetch(`${origin}${route}`)
     assert.equal(page.status, 200, `${route} should resolve to its app page`)
     const html = await page.text()
     const assets = [...html.matchAll(/(?:src|href)=["']([^"']+\.(?:js|css))["']/g)].map((match) => match[1])
     assert.ok(assets.length >= 2, `${route} should reference its app bundles`)
 
-    for (const asset of assets) {
+    for (const asset of [...assets, `/hackthon/${option}/favicon.svg`]) {
       const response = await fetch(new URL(asset, origin))
       assert.equal(response.status, 200, `${asset} should be included in the Pages output`)
     }
   }
+
+  assert.equal((await fetch(`${origin}/hackthon/option-1/hackthon-lab.png`)).status, 200)
 })
