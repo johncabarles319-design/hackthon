@@ -1,6 +1,11 @@
 # Hackthon
 
-Hackthon is a polished prototype for a future hackathon platform. It explores a bold editorial direction inspired by the supplied renewable-energy reference while keeping every demo feature easy to replace.
+Hackthon is a prototype for a future hackathon platform. This repository contains two independent visual directions, deployed together on GitHub Pages.
+
+## Website options
+
+- **Option 1** — the original editorial workshop at the site root.
+- **Option 2** — the Signal Desk concept at [`/option-2/`](https://johncabarles319-design.github.io/hackthon/option-2/).
 
 ## Prototype features
 
@@ -21,11 +26,26 @@ npm install
 npm run dev
 ```
 
+To run Option 2 instead:
+
+```bash
+cd option-2
+npm install
+npm run dev
+```
+
 ## Verify
 
 ```bash
 npm test
 npm run build
+```
+
+Option 2 has its own checks:
+
+```bash
+npm test --prefix option-2
+npm run build --prefix option-2
 ```
 
 ## Deployment

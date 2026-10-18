@@ -23,10 +23,17 @@ jobs:
         with:
           node-version: 22
           cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            option-2/package-lock.json
       - uses: actions/configure-pages@v5
       - run: npm ci
+      - run: npm ci --prefix option-2
       - run: npm test
+      - run: npm test --prefix option-2
       - run: npm run build
+      - run: npm run build --prefix option-2
+      - run: mkdir -p dist/option-2 && cp -R option-2/dist/. dist/option-2/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
