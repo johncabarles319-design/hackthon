@@ -1,53 +1,38 @@
 # Hackthon
 
-Hackthon is a prototype for a future hackathon platform. This repository contains two independent visual directions, deployed together on GitHub Pages.
+Hackthon contains two independent website prototypes and a small chooser page.
 
-## Website options
-
-- **Option 1** — the original editorial workshop at the site root.
-- **Option 2** — the Signal Desk concept at [`/option-2/`](https://johncabarles319-design.github.io/hackthon/option-2/).
-
-## Prototype features
-
-- Responsive event hero with a live countdown and animated idea reactor
-- Four selectable challenge tracks
-- Interactive event journey
-- Three synthetic featured projects
-- Rotating team-match preview
-- Accessible local registration-interest dialog with validation
-- Mobile navigation, keyboard support, and reduced-motion behavior
-
-The project uses demo content only. Form entries are not sent or stored, and the final product features are intentionally left open for the next iteration.
-
-## Run locally
-
-```bash
-npm install
-npm run dev
+```text
+hackthon/
+├── index.html       # choose a direction
+├── chooser.css      # chooser styles
+├── option-1/        # The Workshop
+└── option-2/        # The Signal Desk
 ```
 
-To run Option 2 instead:
+## Run an option
 
 ```bash
-cd option-2
-npm install
-npm run dev
+cd option-1 && npm ci && npm run dev
 ```
 
-## Verify
+Or run Option 2:
 
 ```bash
-npm test
-npm run build
+cd option-2 && npm ci && npm run dev
 ```
 
-Option 2 has its own checks:
+Each option owns its source, dependencies, and tests. The prototypes use sample content; registration interest is local and is not transmitted or stored.
+
+## Verify and build
 
 ```bash
+npm test --prefix option-1
 npm test --prefix option-2
+npm run build --prefix option-1
 npm run build --prefix option-2
+cp index.html chooser.css dist/
+node --test scripts/pages-output.test.mjs
 ```
 
-## Deployment
-
-Pushes to `main` are tested, built, and deployed to GitHub Pages by the included workflow.
+GitHub Pages deploys the chooser at the repository root, with the two sites at `/option-1/` and `/option-2/`.

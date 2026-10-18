@@ -3,13 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hackthon is a three-day innovation event for turning sharp questions into useful prototypes." />
-    <meta name="theme-color" content="#171522" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Hackthon — Build what's next</title>
+    <meta name="description" content="Choose a Hackthon website direction to explore." />
+    <meta name="theme-color" content="#f2efe7" />
+    <link rel="icon" type="image/svg+xml" href="./option-1/favicon.svg" />
+    <link rel="stylesheet" href="./chooser.css" />
+    <title>Hackthon — Choose a direction</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <main class="page-shell">
+      <header class="masthead">
+        <a class="wordmark" href="./" aria-label="Hackthon options">hackthon<span>®</span></a>
+        <p>Two directions · One project</p>
+      </header>
+
+      <section class="intro" aria-labelledby="page-title">
+        <p class="intro-note">A work in progress, open to what comes next.</p>
+        <h1 id="page-title">Choose a world<br />to step into.</h1>
+        <p class="intro-copy">Explore two visual directions for Hackthon. Each is an independent prototype, ready to evolve as the final features take shape.</p>
+      </section>
+
+      <nav class="directions" aria-label="Choose a Hackthon design option">
+        <a class="direction direction--workshop" href="./option-1/">
+          <div class="workshop-preview" aria-hidden="true">
+            <span class="preview-caption">IDEA REACTOR · ACTIVE</span>
+            <span class="orbit orbit--outer"></span>
+            <span class="orbit orbit--inner"></span>
+            <span class="reactor-core">MAKE<br />IT<br /><i>real.</i></span>
+            <span class="orbit-dot"></span>
+            <span class="preview-foot">CHALLENGE → TEAM → PROTOTYPE</span>
+          </div>
+          <div class="direction-meta">
+            <div>
+              <p class="direction-index">OPTION 01 <span>· THE WORKSHOP</span></p>
+              <h2>Ideas in motion.</h2>
+              <p class="direction-description">A warm, editorial event space where challenges become things people can build.</p>
+            </div>
+            <span class="direction-action">Explore Option 1 <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
+
+        <a class="direction direction--signal" href="./option-2/">
+          <div class="signal-preview" aria-hidden="true">
+            <div class="signal-top"><span>HACKTHON / SIGNAL DESK</span><span>● LIVE</span></div>
+            <div class="signal-content">
+              <p class="signal-label">THE NEXT QUESTION</p>
+              <p class="signal-question">What if clean energy could think ahead?</p>
+              <div class="signal-reading"><span>TRACK SIGNAL</span><span>CLIMATE TECH</span></div>
+              <div class="signal-meter"><span></span></div>
+              <p class="signal-status">PROMISING TERRITORY <span>●●●○</span></p>
+            </div>
+            <div class="signal-bottom"><span>INPUT RECEIVED</span><span>01 / 04</span></div>
+          </div>
+          <div class="direction-meta">
+            <div>
+              <p class="direction-index">OPTION 02 <span>· THE SIGNAL DESK</span></p>
+              <h2>Find the signal.</h2>
+              <p class="direction-description">A crisp, late-night workspace for spotting a promising problem and shaping a response.</p>
+            </div>
+            <span class="direction-action">Explore Option 2 <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
+      </nav>
+
+      <footer class="page-footer">
+        <span>HACKTHON · PROTOTYPE DIRECTIONS</span>
+        <span>Both experiences use sample content.</span>
+      </footer>
+    </main>
   </body>
 </html>

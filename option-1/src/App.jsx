@@ -86,7 +86,7 @@ export default function App() {
         <a className="brand" href="#top" aria-label="Hackthon home">H<span>●</span></a>
         <button className="menu-button" type="button" aria-expanded={menuOpen} aria-controls="site-navigation" onClick={() => setMenuOpen((open) => !open)}><span /><span /><span className="sr-only">Toggle navigation</span></button>
         <nav id="site-navigation" className={menuOpen ? 'nav-links is-open' : 'nav-links'} aria-label="Main navigation">
-          <a href="#tracks" onClick={() => setMenuOpen(false)}>Tracks</a><a href="#journey" onClick={() => setMenuOpen(false)}>Journey</a><a href="#builds" onClick={() => setMenuOpen(false)}>Builds</a><a href="#teams" onClick={() => setMenuOpen(false)}>Teams</a><a href={`${import.meta.env.BASE_URL}option-2/`} aria-label="View Hackthon Option 2">Option 2 ↗</a>
+          <a href="#tracks" onClick={() => setMenuOpen(false)}>Tracks</a><a href="#journey" onClick={() => setMenuOpen(false)}>Journey</a><a href="#builds" onClick={() => setMenuOpen(false)}>Builds</a><a href="#teams" onClick={() => setMenuOpen(false)}>Teams</a><a href={import.meta.env.BASE_URL.replace(/option-1\/$/, '')} aria-label="Return to all Hackthon options">All options ↗</a>
         </nav>
         <button className="nav-action" type="button" onClick={openRegistration}>Join the build <ArrowIcon /></button>
       </header>
