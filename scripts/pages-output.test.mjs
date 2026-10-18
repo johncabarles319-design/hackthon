@@ -51,9 +51,10 @@ test('Pages output serves the chooser and both option sites', async (context) =>
   assert.deepEqual(routes, ['option-1/', 'option-2/'])
   assert.equal((await fetch(`${origin}/hackthon/chooser.css`)).status, 200)
 
-  for (const option of ['option-1', 'option-2']) {
-    const route = new URL(`${option}/`, `${origin}/hackthon/`).pathname
-    const page = await fetch(`${origin}${route}`)
+  for (const routeHref of routes) {
+    const route = new URL(routeHref, `${origin}/hackthon/`)
+    const option = routeHref.replace(/\/$/, '')
+    const page = await fetch(route)
     assert.equal(page.status, 200, `${route} should resolve to its app page`)
     const html = await page.text()
     const assets = [...html.matchAll(/(?:src|href)=["']([^"']+\.(?:js|css))["']/g)].map((match) => match[1])
